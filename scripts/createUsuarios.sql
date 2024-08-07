@@ -1,0 +1,8 @@
+CREATE TABLE usuarios (
+    Id INT PRIMARY KEY IDENTITY,
+    Nombre NVARCHAR(100) NOT NULL,
+    Usuario NVARCHAR(100) UNIQUE NOT NULL,
+    Contraseña NVARCHAR(255) NOT NULL,
+    FechaCreacion DATETIME DEFAULT GETDATE()
+);
+
